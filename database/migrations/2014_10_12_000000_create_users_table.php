@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('telefone');
             $table->string('foto');
             $table->string('tipo')->require();
-            $table->string('accessLevel')->default('0');
+            $table->string('nivel')->default('padrao');
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
